@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	
+	<!-- My CSS -->
+	<link rel="stylesheet" href="/css/style.css">
+
+	<title>GENIUS | TEACHER</title>
+</head>
+<body>
+
+
+	<!--. SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Teacher Charles</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="/htmls/home.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<!-- <li class="active"> -->
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Discipline</span>
+				</a>
+			
+			
+			<li>
+				<a href="/htmls/offence.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Offence</span>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#">
+					<i class='bx bxs-attendance-dots' ></i>
+					<span class="text">Attendance</span>
+				</a>
+			</li>
+			<li>
+			<a href="#">
+				<i class='bx bxs-message-dots' ></i>
+				<span class="text">Message</span>
+			</a>
+		</li>
+		</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<!-- <a href="#" class="nav-link">Categories</a> -->
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<!-- <a href="#" class="profile">
+				<img src="img/people.png">
+			</a> -->
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main id="page">
+			<div class="head-title">
+				<div class="left">
+					<h1>Permission</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="/htmls/home.html">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+
+                   
+
+
+				<!-- <li> 
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3></h3>
+						<p></p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3></h3>
+						<p></p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3</h3>
+						<p></p>
+					</span>
+				</li> 
+			</ul> -->
+
+          <div class="main">
+			<div class="table-data"> 
+				<div class="order" >
+					<div class="head">
+						<h3>STUDENTS</h3>
+
+						<input type="text" placeholder="search name" id="myInput"  onkeyup="myFunction()" class="searchBox">
+						<!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."> -->
+						<i class='bx bx-search' id="searchPermission"></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<table class="table-permission" id="myTable">
+						<thead>
+							<tr class="header">
+								<th>User</th>
+								<th>class</th>
+								<th>Combination</th>
+								<th>Student id</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+								
+									<p>MUGISHA JUSTE</p>
+								</td>
+								<td>S5</td>
+								<td><span class="status completed">HGL</span></td>
+								<td><span class="status  completed">kcs-1234</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>IRADUKUNDA JEAN REMY</p>
+								</td>
+								<td>S5</td>
+								<td><span class="status pending">HEG</span></td>
+								<td><span class="status completed">kcs-897</span></td>
+							</tr>
+							<tr>
+								<td>
+									<p>MUGISHA ERIC</p>
+								</td>
+								<td>S6</td>
+								<td><span class="status process">PCB</span></td>
+								<td><span class="status completed">kcs-234</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>PRINCE GISA</p>
+								</td>
+								<td>S4</td>
+								<td><span class="status pending">MPC</span></td>
+								<td><span class="status completed">kcs-234</span></td>
+							</tr>
+							<tr>
+								<td>
+									
+									<p>IRAKOZE LAURA</p>
+								</td>
+								<td>S3</td>
+								<td><span class="status completed">MCE</span></td>
+								<td><span class="status completed">kcs-234</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div> 
+				
+				
+				</div>
+				
+			</div>
+			<div class="container">
+				<button class="close">X</button>
+				<header>Exit Permission </header>
+				<img  class="print" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMtJREFUSEvVlWENwjAQhb8pQALgABzgAAs4wAI4QMKk4GCTAA5wALmES8pl69orJWM/m977+q59t4bKX1NZnxjgmQkf1JoFYKqN6tTt4L8AF2APrDIvWLffgBY460JoX8SPTmFbJoCTLIaAB7AAtkDvBG2ADhAnawuIvoYBoM2JHvZDJ3QwO8BYF7/moBjgnUXJDn4GyB0Vow40B7a3qYCw7q7TICzevWO+NIRcgIgfgKsNmj15ai6Kx3Xq1HD/D6oBUoWj+6YusBjyAkqyMBlM3PP1AAAAAElFTkSuQmCC"/>
+				<form action="#">
+					<div class="form first">
+						
+						<div class="details personal">
+							<h2></h2>
+							<span class="title">Student Details</span>
+							<div class="fields">
+								<div class="input-field">
+									<label>Full Name</label>
+									<input type="text" placeholder="Enter your name" required>
+								</div>
+								<!-- <div class="input-field">
+									<label>Date of Birth</label>
+									<input type="date" placeholder="Enter birth date" required>
+								</div> -->
+								<div class="input-field">
+									<label>KCS CODE</label>
+									<input type="text" placeholder="KCS-123" required>
+								</div>
+								<div class="input-field">
+									<label>class</label>
+									<input type="text" placeholder="S5 MPC" required>
+								</div>
+								<div class="input-field">
+									<label>Parent or Guardian</label>
+									<input type="text" placeholder="Guardian's name" required>
+								</div>
+								<div class="input-field">
+									<label>Relationship</label>
+									<input type="text" placeholder="father" required>
+								</div>
+								<div class="input-field">
+									<label>Telephone Number</label>
+									<input type="tel" id="phone" name="phone" maxlength="10" placeholder="078812379">
+								</div>
+								<div class="input-field">
+									<label>Reason for Exit</label>
+									  <textarea name="" id="" cols="10" rows="2" style="resize:none;"></textarea>
+								</div>
+								<div class="input-field">
+									<label>Exit Date</label>
+									  <input type="datetime-local">
+								</div>
+								<div class="input-field">
+									<label>Return Date</label>
+									  <input type="datetime-local">
+								</div>
+							</div>
+						  
+						</div> 
+						<button class="submit">
+							<span class="btnText">Submit</span>
+							<i class="uil uil-navigator"></i>
+						</button>
+						<!-- <button class="print">
+							<span class="btnText">print</span>
+							<i class="uil uil-navigator"></i>
+						</button> -->
+					</div>
+				
+					  
+							</div>
+		
+		</div>
+                 
+                       
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- <div class="post-permission" id="on">
+				<h2>EXIT PERMISSION</h2>
+				<label for="">Student's Name</label>
+				<input type="text" placeholder="username">
+				<label for="">Student's Code</label>
+				<input type="text" placeholder="kcs-code">
+				<label for="">class</label>
+				<input type="text" placeholder="class">
+				<input type="text" placeholder="Combination">
+				<label class="">Exit date</label>
+				<input type="datetime-local" class="dates">
+				<label for="return" >Return Date</label>
+				<input type="datetime-local" class="dates" >
+				<label for="reason">Permission For</label>
+				<textarea name="" id="" cols="30" rows="10" class="reason-para" style="resize: none;"></textarea>
+			</div>	 -->
+			
+		</main>
+		<!-- MAIN -->
+	</section>
+	
+	
+
+	<script src="/js/script.js"></script>
+</body>
+</html>
